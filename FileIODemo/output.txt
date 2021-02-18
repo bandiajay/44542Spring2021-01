@@ -1,0 +1,8 @@
+Weather{windDirection=ne, temprature=-2.0, snowing=false}
+Weather{windDirection=se, temprature=0.0, snowing=true}
+Weather{windDirection=sw, temprature=7.0, snowing=false}
+Weather{windDirection=nw, temprature=-1.0, snowing=true}
+Weather{windDirection=east, temprature=9.0, snowing=false}
+Weather{windDirection=west, temprature=8.0, snowing=false}
+Weather{windDirection=north, temprature=5.0, snowing=true}
+Weather{windDirection=south, temprature=2.0, snowing=true}

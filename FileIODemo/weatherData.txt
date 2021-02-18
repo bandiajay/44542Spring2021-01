@@ -1,0 +1,8 @@
+ne -2 false
+se 0 true
+sw 7 false
+nw -1 true
+east 9 false
+west 8 false
+north 5 true
+south 2 true
