@@ -5,8 +5,6 @@
  */
 package employees;
 
-import java.time.temporal.TemporalAdjusters;
-
 /**
  *
  * @author ajay
@@ -20,18 +18,18 @@ public class Employee {
         
     }
 
-    public Employee(String fisrtName, String lastName, String SSN) {
-        this.firstName = fisrtName;
+    public Employee(String firstName, String lastName, String SSN) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.SSN = SSN;
     }
 
-    public String getFisrtName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFisrtName(String fisrtName) {
-        this.firstName = fisrtName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -56,6 +54,6 @@ public class Employee {
     
     @Override
     public String toString(){
-        return SSN+" "+getFullName();
+        return SSN+" "+getFullName();                 
     }
 }

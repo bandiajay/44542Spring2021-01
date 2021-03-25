@@ -10,22 +10,21 @@ package employees;
  * @author ajay
  */
 public class HourlyEmployee extends Employee {
-    
-    private double hourlyRate;
+    private double wageRate;
     private int hrsWorked;
 
-    public HourlyEmployee( String fisrtName, String lastName, String SSN, double hourlyRate, int hrsWorked) {
-        super(fisrtName, lastName, SSN);
-        this.hourlyRate = hourlyRate;
+    public HourlyEmployee( String firstName, String lastName, String SSN, double wageRate, int hrsWorked) {
+        super(firstName, lastName, SSN);
+        this.wageRate = wageRate;
         this.hrsWorked = hrsWorked;
     }
 
-    public double getHourlyRate() {
-        return hourlyRate;
+    public double getWageRate() {
+        return wageRate;
     }
 
-    public void setHourlyRate(double hourlyRate) {
-        this.hourlyRate = hourlyRate;
+    public void setWageRate(double wageRate) {
+        this.wageRate = wageRate;
     }
 
     public int getHrsWorked() {
@@ -37,18 +36,17 @@ public class HourlyEmployee extends Employee {
     }
     
     public double calcSalary(){
-        return hourlyRate*hrsWorked;
+        return wageRate*hrsWorked;
     }
     
     @Override
     public String getFullName(){
-        return super.getFisrtName()+" "+super.getLastName();
+        return super.getFirstName()+" "+super.getLastName();
     }
     
     @Override
     public String toString(){
         return super.toString()+" $"+calcSalary();
     }
-    
     
 }

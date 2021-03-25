@@ -16,11 +16,17 @@ public class EmployeeDriver {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Employee emp1 = new Employee("Byron", "Williams", "123-43-1234");
-        System.out.println(emp1);
+        Employee emp = new Employee("John", "Smith", "123-33-5432");
+        System.out.println(emp);
         
-        HourlyEmployee hrEmp = new HourlyEmployee("John", "Smith", "123", 12, 10);
+        HourlyEmployee hrEmp = new HourlyEmployee("Byron", "Williams", "123-45-6789", 15, 10);
         System.out.println(hrEmp); 
+        
+        //emp = hrEmp;//assigning a sub class instance to a 
+        //super class instance -- polymorphic substitution
+        //hrEmp = emp;//illegal.
+        Employee emp1 = new HourlyEmployee("A", "B", "09876", 34, 12);
+        System.out.println(emp1.toString());
    }
     
 }
